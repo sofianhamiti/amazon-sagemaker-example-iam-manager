@@ -1,0 +1,45 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "sagemaker:CreateModel"
+            ],
+            "Resource": "*",
+            "Condition": {
+                "ForAllValues:StringEquals": {
+                    "sagemaker:VpcSubnets": [
+                        "subnet-04b99c62"
+                    ],
+                    "sagemaker:VpcSecurityGroupIds": [
+                        "sg-b000efff"
+                    ]
+                },
+                "Null": {
+                    "sagemaker:VpcSubnets": "false",
+                    "sagemaker:VpcSecurityGroupIds": "false"
+                }
+            }
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "sagemaker:CreateModelPackage",
+                "sagemaker:CreateModelPackageGroup",
+                "sagemaker:DescribeModel",
+                "sagemaker:DescribeModelPackage",
+                "sagemaker:DescribeModelPackageGroup",
+                "sagemaker:BatchDescribeModelPackage",
+                "sagemaker:UpdateModelPackage",
+                "sagemaker:DeleteModel",
+                "sagemaker:DeleteModelPackage",
+                "sagemaker:DeleteModelPackageGroup",
+                "sagemaker:ListModels",
+                "sagemaker:ListModelPackages",
+                "sagemaker:ListModelPackageGroups"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

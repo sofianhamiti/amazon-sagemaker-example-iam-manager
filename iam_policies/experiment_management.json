@@ -1,0 +1,64 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "sagemaker:AddAssociation",
+                "sagemaker:CreateAction",
+                "sagemaker:CreateArtifact",
+                "sagemaker:CreateContext",
+                "sagemaker:CreateExperiment",
+                "sagemaker:CreateTrial",
+                "sagemaker:CreateTrialComponent",
+                "sagemaker:UpdateAction",
+                "sagemaker:UpdateArtifact",
+                "sagemaker:UpdateContext",
+                "sagemaker:UpdateExperiment",
+                "sagemaker:UpdateTrial",
+                "sagemaker:UpdateTrialComponent",
+                "sagemaker:AssociateTrialComponent",
+                "sagemaker:DisassociateTrialComponent",
+                "sagemaker:DeleteAssociation",
+                "sagemaker:DeleteAction",
+                "sagemaker:DeleteArtifact",
+                "sagemaker:DeleteContext",
+                "sagemaker:DeleteExperiment",
+                "sagemaker:DeleteTrial",
+                "sagemaker:DeleteTrialComponent"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "sagemaker:DescribeAction",
+                "sagemaker:DescribeArtifact",
+                "sagemaker:DescribeContext",
+                "sagemaker:DescribeExperiment",
+                "sagemaker:DescribeTrial",
+                "sagemaker:DescribeTrialComponent",
+                "sagemaker:DescribeLineageGroup"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "sagemaker:ListAssociations",
+                "sagemaker:ListActions",
+                "sagemaker:ListArtifacts",
+                "sagemaker:ListContexts",
+                "sagemaker:ListExperiments",
+                "sagemaker:ListTrials",
+                "sagemaker:ListTrialComponents",
+                "sagemaker:ListLineageGroups",
+                "sagemaker:GetLineageGroupPolicy",
+                "sagemaker:QueryLineage",
+                "sagemaker:Search",
+                "sagemaker:GetSearchSuggestions"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

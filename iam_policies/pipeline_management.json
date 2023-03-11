@@ -1,0 +1,26 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "sagemaker:CreatePipeline",
+                "sagemaker:StartPipelineExecution",
+                "sagemaker:StopPipelineExecution",
+                "sagemaker:RetryPipelineExecution",
+                "sagemaker:UpdatePipelineExecution",
+                "sagemaker:SendPipelineExecutionStepSuccess",
+                "sagemaker:SendPipelineExecutionStepFailure",
+                "sagemaker:DescribePipeline",
+                "sagemaker:DescribePipelineExecution",
+                "sagemaker:DescribePipelineDefinitionForExecution",
+                "sagemaker:DeletePipeline",
+                "sagemaker:ListPipelines",
+                "sagemaker:ListPipelineExecutions",
+                "sagemaker:ListPipelineExecutionSteps",
+                "sagemaker:ListPipelineParametersForExecution"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

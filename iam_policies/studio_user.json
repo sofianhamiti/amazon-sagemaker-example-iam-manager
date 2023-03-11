@@ -1,0 +1,51 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "sagemaker:CreatePresignedDomainUrl",
+                "sagemaker:CreateApp",
+                "sagemaker:CreateAppImageConfig",
+                "sagemaker:UpdateAppImageConfig",
+                "sagemaker:DeleteApp",
+                "sagemaker:DeleteAppImageConfig",
+                "sagemaker:DescribeApp",
+                "sagemaker:DescribeAppImageConfig",
+                "sagemaker:DescribeDomain",
+                "sagemaker:DescribeUserProfile",
+                "sagemaker:DescribeSpace",
+                "sagemaker:ListSpaces",
+                "sagemaker:*App",
+                "sagemaker:ListApps",
+                "sagemaker:ListDomains",
+                "sagemaker:ListAppImageConfigs",
+                "sagemaker:ListUserProfiles"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "codecommit:GitPull",
+                "codecommit:GitPush",
+                "codecommit:BatchGetRepositories",
+                "codecommit:CreateRepository",
+                "codecommit:GetRepository",
+                "codecommit:List*"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "sagemaker:ListTags"
+            ],
+            "Resource": [
+                "arn:aws:sagemaker:*:*:user-profile/*"
+            ]
+        }
+    ]
+}
